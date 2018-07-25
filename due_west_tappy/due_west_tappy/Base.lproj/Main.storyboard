@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="due_west_tappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDQ-Qb-Yda">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="388.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll1-83-zWL">
+                                        <rect key="frame" x="163" y="169.66666666666666" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Hbj-PI-FUk"/>
+                                            <constraint firstAttribute="width" constant="50" id="qPQ-yB-78U"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Blue Buttom"/>
+                                        <connections>
+                                            <action selector="BlueButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHU-q3-Mtp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW9-Vg-vb9">
+                                        <rect key="frame" x="245" y="318.66666666666669" width="70" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="cWq-dR-Qdq"/>
+                                            <constraint firstAttribute="height" constant="50" id="pYS-tT-P6u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.12592627081861718" blue="0.085880876104233117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.71679923082735364" blue="0.93193399896860951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eW9-Vg-vb9" secondAttribute="bottom" constant="20" id="9bq-Qe-0Rx"/>
+                                    <constraint firstItem="Ll1-83-zWL" firstAttribute="centerX" secondItem="BDQ-Qb-Yda" secondAttribute="centerX" id="Hql-Fn-mG5"/>
+                                    <constraint firstItem="Ll1-83-zWL" firstAttribute="centerY" secondItem="BDQ-Qb-Yda" secondAttribute="centerY" id="eeP-1r-c13"/>
+                                    <constraint firstAttribute="trailing" secondItem="eW9-Vg-vb9" secondAttribute="trailing" constant="60" id="uPx-w1-dPO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-rg-aHM">
+                                <rect key="frame" x="0.0" y="389.66666666666674" width="375" height="388.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRt-n1-5Os">
+                                        <rect key="frame" x="163" y="169.33333333333331" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Or7-Em-oNg"/>
+                                            <constraint firstAttribute="height" constant="50" id="s0s-qd-NT2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Pink Buttom"/>
+                                        <connections>
+                                            <action selector="PinkButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdx-Bl-Ip6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14T-4g-hsH">
+                                        <rect key="frame" x="60" y="20" width="16" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.12592627079999999" blue="0.085880876100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95823718962868443" green="1" blue="0.66456777210231532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="xRt-n1-5Os" firstAttribute="centerX" secondItem="fpa-rg-aHM" secondAttribute="centerX" id="3g3-OV-xGE"/>
+                                    <constraint firstItem="14T-4g-hsH" firstAttribute="top" secondItem="fpa-rg-aHM" secondAttribute="top" constant="20" id="UuA-dn-xXh"/>
+                                    <constraint firstItem="14T-4g-hsH" firstAttribute="leading" secondItem="fpa-rg-aHM" secondAttribute="leading" constant="60" id="XNL-z5-3ot"/>
+                                    <constraint firstItem="xRt-n1-5Os" firstAttribute="centerY" secondItem="fpa-rg-aHM" secondAttribute="centerY" id="wja-qg-HWN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-dH-Uuc">
+                                <rect key="frame" x="162.66666666666666" y="388" width="50" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.35808173256229137" blue="0.35416955166404074" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEL-8B-Zzh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BDQ-Qb-Yda" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="63a-UW-98a"/>
+                            <constraint firstItem="fpa-rg-aHM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7O5-Vb-zOj"/>
+                            <constraint firstItem="BDQ-Qb-Yda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7e2-wA-acD"/>
+                            <constraint firstItem="BDQ-Qb-Yda" firstAttribute="height" secondItem="fpa-rg-aHM" secondAttribute="height" id="JRX-Ec-2Kr"/>
+                            <constraint firstItem="fpa-rg-aHM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QOT-T8-0MM"/>
+                            <constraint firstItem="fpa-rg-aHM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tgy-zS-zEW"/>
+                            <constraint firstItem="kKZ-dH-Uuc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VwA-uK-fI8"/>
+                            <constraint firstItem="BDQ-Qb-Yda" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YjP-Q1-j4g"/>
+                            <constraint firstItem="fpa-rg-aHM" firstAttribute="top" secondItem="BDQ-Qb-Yda" secondAttribute="bottom" constant="1" id="heX-Mp-2Va"/>
+                            <constraint firstItem="kKZ-dH-Uuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iMh-mE-pxC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BlueButtomCount" destination="eW9-Vg-vb9" id="LwC-fd-6i7"/>
+                        <outlet property="PinkButtomCount" destination="14T-4g-hsH" id="HgP-k9-45R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue Buttom" width="125" height="125"/>
+        <image name="Pink Buttom" width="125" height="125"/>
+    </resources>
+    <color key="tintColor" red="0.48603936780000001" green="0.52591285629999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
